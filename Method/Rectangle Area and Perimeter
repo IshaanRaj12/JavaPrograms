@@ -1,0 +1,45 @@
+Main File
+
+public class Main{
+  public static void main(String []args){
+    
+  
+    Rectangle r1 = new Rectangle(10,30);
+    System.out.println("The area is: " + r1.get_area());
+    System.out.println("The perimeter is: " + r1.get_perimeter());
+    System.out.println("The length is: " + r1.get_length());
+    System.out.println("The width is: " + r1.get_width());
+
+  }
+}
+
+Rectangle File
+
+public class Rectangle {
+  private int length;
+  private int width;
+  
+  public Rectangle(int l, int w) {
+    this.length = l;
+    this.width = w;
+    
+  }
+  
+  public int get_area() {
+    int a = this.length * this.width;
+    return a;
+  }
+  
+  public int get_length() {
+    return this.length;
+  }
+  
+  public int get_width() {
+    return this.width;
+  }
+  
+  public int get_perimeter() {
+    int b = (this.length * 2) + (this.width * 2);
+    return b;
+  }
+}
